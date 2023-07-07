@@ -97,7 +97,8 @@ require_once ABSPATH . 'wp-settings.php';
  */
 if ( ! defined( 'FORCE_SSL_ADMIN' ) ) {
 define('FORCE_SSL_ADMIN', true);
+}
 define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 $_SERVER['HTTPS'] = 'on';
 $_SERVER['SERVER_PORT'] = 443;
-}
+
