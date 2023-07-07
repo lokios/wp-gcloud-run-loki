@@ -15,4 +15,4 @@ RUN docker-php-ext-install zip \
 
 WORKDIR /var/www/html
 COPY ./app /var/www/html/ 
-RUN chmod -R 765 /var/www/html/
+RUN chmod -R 777 /var/www/html/
