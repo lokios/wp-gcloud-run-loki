@@ -94,11 +94,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 if ( ! defined( 'FORCE_SSL_ADMIN' ) ) {
 	define('FORCE_SSL_ADMIN', true);
-	}
+}
 	define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 	$_SERVER['HTTPS'] = 'on';
 	$_SERVER['SERVER_PORT'] = 443;
 	
+define('JWT_AUTH_SECRET_KEY', '4lef(cMSWM+2$B^:`B)eK;*UniH;pB8hh>7C$.c4E&E-!EN-bdUpM<.pb5fL%7Ja');
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
